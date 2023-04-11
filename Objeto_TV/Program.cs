@@ -10,8 +10,8 @@ namespace Objeto_TV
     {
         static void Main(string[] args)
         {
-            Televisor miTelevisor = new Televisor();
-            miTelevisor.SubirVolumen();
+            Televisor tvCocina = new Televisor();
+            tvCocina.SubirVolumen();
 
         }
     }
