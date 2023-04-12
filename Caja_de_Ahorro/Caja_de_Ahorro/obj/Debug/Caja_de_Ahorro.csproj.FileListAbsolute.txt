@@ -1,0 +1,8 @@
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\bin\Debug\Caja_de_Ahorro.exe.config
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\bin\Debug\Caja_de_Ahorro.exe
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\bin\Debug\Caja_de_Ahorro.pdb
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\obj\Debug\Caja_de_Ahorro.csproj.AssemblyReference.cache
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\obj\Debug\Caja_de_Ahorro.csproj.SuggestedBindingRedirects.cache
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\obj\Debug\Caja_de_Ahorro.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\obj\Debug\Caja_de_Ahorro.exe
+C:\Users\Navegador\source\repos\Caja_de_Ahorro\Caja_de_Ahorro\obj\Debug\Caja_de_Ahorro.pdb
