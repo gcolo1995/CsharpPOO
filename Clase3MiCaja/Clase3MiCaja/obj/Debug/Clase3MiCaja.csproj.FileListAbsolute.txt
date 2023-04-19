@@ -1,0 +1,8 @@
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\bin\Debug\Clase3MiCaja.exe.config
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\bin\Debug\Clase3MiCaja.exe
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\bin\Debug\Clase3MiCaja.pdb
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\obj\Debug\Clase3MiCaja.csproj.AssemblyReference.cache
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\obj\Debug\Clase3MiCaja.csproj.SuggestedBindingRedirects.cache
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\obj\Debug\Clase3MiCaja.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\obj\Debug\Clase3MiCaja.exe
+C:\Users\Navegador\source\repos\Clase3MiCaja\Clase3MiCaja\obj\Debug\Clase3MiCaja.pdb
