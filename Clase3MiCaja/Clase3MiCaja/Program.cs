@@ -32,9 +32,13 @@ namespace Clase3MiCaja
             
             Console.WriteLine("Ingrese la fecha de nacimiento (DD/MM/AAAA)");
             PrimerTitular.FechaNac = Convert.ToDateTime(Console.ReadLine());
-
             Console.WriteLine("La edad del cliente es de "+ PrimerTitular.Edad +" años.");
 
+            /*
+            Console.WriteLine("Ingrese la fecha de nacimiento (DD/MM/AAAA)");
+            PrimerTitular.FechaNac = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("La edad del cliente es de "+ PrimerTitular.CalcularEdad()+" años.");
+            */
 
             PrimerCA.TitularCta = PrimerTitular;
 
