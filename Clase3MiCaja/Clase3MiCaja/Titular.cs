@@ -55,6 +55,12 @@ namespace Clase3MiCaja
             get { return _telefono; }
             set { _telefono = value; }
         }
+        
+        public int CalcularEdad()
+        {
+            TimeSpan tiempoNacido = DateTime.Now.Subtract(_fechaNac);
+            return Convert.ToInt32(Math.Truncate(tiempoNacido.TotalDays / 365.25));
+        }
     
     }
 }
