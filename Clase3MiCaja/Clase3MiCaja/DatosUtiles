@@ -1,0 +1,44 @@
+
+Declaracion de enumeración 
+
+    namespace Clase3MiCaja
+    {
+        public enum Genero
+        {
+            Masculino = 0,
+            Femenino = 1,
+        }
+    }
+
+Declaracion del atributo con el tipo "enumeración" en la clase 
+
+    private Genero _sexo;
+
+
+Convertir Datos Ingresados en una enumeración (sexo masculino - Femenino)
+
+    Console.WriteLine("Ingrese el sexo: ");
+                var genero = Console.ReadLine();
+                if (Enum.TryParse(genero, out Genero sexo))
+                {
+                    PrimerTitular.Sexo = sexo; 
+                }   
+
+
+
+                Console.WriteLine("Ingrese la fecha de nacimiento (DD/MM/AAAA)");
+                PrimerTitular.FechaNac = Convert.ToDateTime(Console.ReadLine());
+    
+                Console.WriteLine("La edad del cliente es de "+ PrimerTitular.Edad +" años.");
+
+Cálculo de edad como Propiedad de Fecha de Nacimiento
+    public int Edad
+            {get{
+                TimeSpan tiempoNacido= DateTime.Now.Subtract(_fechaNac);
+                return Convert.ToInt32(Math.Truncate(tiempoNacido.TotalDays/365.25));
+                }
+            }   
+            
+    private DateTime _fechaNac;
+    public DateTime FechaNac
+        {   get {return _fechaNac;}    set { _fechaNac = value;}   }
