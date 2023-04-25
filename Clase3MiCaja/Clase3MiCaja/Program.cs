@@ -22,12 +22,15 @@ namespace Clase3MiCaja
             Console.WriteLine("Ingrese el teléfono: ");
             PrimerTitular.Telefono = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Ingrese el sexo: ");
+            Console.WriteLine("Ingrese el sexo: (Masculino/Femenino)");
             var genero = Console.ReadLine();
+            //Console.WriteLine("Dato guardado en genero: "+genero+"");
+
             if (Enum.TryParse(genero, out Genero sexo))
             {
+                //Console.WriteLine("Dato guardado en genero: " + sexo + "");
                 PrimerTitular.Sexo = sexo; 
-            }   
+            }    
 
             
             Console.WriteLine("Ingrese la fecha de nacimiento (DD/MM/AAAA)");
