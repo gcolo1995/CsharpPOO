@@ -12,11 +12,10 @@ namespace TP1_POO_Colombano
         private int _legajo;
         private string _nombre;
         private string _apellido;
-        private DateTime _fecha_Nacimiento;
-        private DateTime _fecha_Ingreso;
-        private int _edad;
-        private Boolean _activo;
-        private int _cant_Materias_Aprobadas;
+        private DateTime _fechaNacimiento;
+        private DateTime _fechaIngreso;
+        private bool _activo;
+        private int _cantMateriasAprobadas;
         #endregion
 
         #region properties
@@ -37,61 +36,59 @@ namespace TP1_POO_Colombano
         }
         public DateTime FechaNacimiento
         {
-            set { _fecha_Nacimiento = value; }
+            set { _fechaNacimiento = value; }
         }
         public DateTime FechaIngreso
         {
-            set { _fecha_Ingreso = value; }
+            set { _fechaIngreso = value; }
         }
         public int Edad
         {
             get
             {
-                TimeSpan _tiempo = DateTime.Now.Subtract(_fecha_Nacimiento);
-                _edad = Convert.ToInt32(Math.Truncate(_tiempo.TotalDays / 365.25));
-                return _edad;
-
+                TimeSpan _edad = DateTime.Now.Subtract(_fechaNacimiento);
+                return Convert.ToInt32(Math.Truncate(_edad.TotalDays / 365.25)); 
             }
         }
-        public Boolean Activo
+        public bool Activo
         {
             get { return _activo;}
             set { _activo = value; }
         }
         public int CantAprobadas
         {
-            set { _cant_Materias_Aprobadas = value; }
+            set { _cantMateriasAprobadas = value; }
         }
         #endregion
 
         #region metods
 
-        public int Antiguedad(string unidad)            //la unidad ya va a estar convertida en .Year
+        public int CalcularAntiguedad(string unidad)            //la unidad ya va a estar convertida en .Year
         {
             int _tiempo = 0;
             
             if (unidad == "Años")
             {
-                _tiempo = DateTime.Now.Year - _fecha_Ingreso.Year;
-                if( DateTime.Now.DayOfYear < _fecha_Ingreso.DayOfYear )
+                _tiempo = DateTime.Now.Year - _fechaIngreso.Year;
+                if( DateTime.Now.DayOfYear < _fechaIngreso.DayOfYear )
                 {
                     _tiempo--;
                 }
             }
             else if (unidad == "Meses")
             {
-                int _ano = DateTime.Now.Year - _fecha_Ingreso.Year;
-                int _meses = DateTime.Now.Month - _fecha_Ingreso.Month;
-                if (DateTime.Now.DayOfYear < _fecha_Ingreso.DayOfYear)
+                int _ano = DateTime.Now.Year - _fechaIngreso.Year;
+                int _meses = DateTime.Now.Month - _fechaIngreso.Month;
+                if (DateTime.Now.DayOfYear < _fechaIngreso.DayOfYear)
                 {
                     _meses--;
                 }
 
                 _tiempo = _ano * 12 + _meses ;
             }
-            else if (unidad == "Dias")    
+            else if (unidad == "Días")    
             {
-                TimeSpan _dias = DateTime.Now.Subtract(_fecha_Ingreso);
+                TimeSpan _dias = DateTime.Now.Subtract(_fechaIngreso);
                 _tiempo = Convert.ToInt32(_dias.TotalDays);
             }
 
@@ -99,15 +96,15 @@ namespace TP1_POO_Colombano
 
         }
 
-        public int Materias_No_Aprobadas()
+        public int CalcularMateriasNoAprob()
         {
             int _cantMaterias = 36;
-            return (_cantMaterias - _cant_Materias_Aprobadas);
+            return (_cantMaterias - _cantMateriasAprobadas);
         }
 
-        public int Edad_De_Ingreso()
+        public int CalcularEdadIngreso()
         {
-            TimeSpan _tiempo = _fecha_Ingreso - _fecha_Nacimiento;
+            TimeSpan _tiempo = _fechaIngreso - _fechaNacimiento;
             return Convert.ToInt32(Math.Truncate(_tiempo.TotalDays / 365.25));
         }
 
