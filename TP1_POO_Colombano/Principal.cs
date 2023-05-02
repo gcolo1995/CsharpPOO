@@ -63,7 +63,7 @@ namespace TP1_POO_Colombano
         private void CompletarDatagrid()
         {
             this.dataGridView1.DataSource = null;
-            //this.dataGridView1.DataSourse = lista.ListarAlumnos();
+            this.dataGridView1.DataSource = lista.ListarAlumnos();
 
         }
 
