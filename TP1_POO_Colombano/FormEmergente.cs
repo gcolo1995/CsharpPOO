@@ -53,7 +53,7 @@ namespace TP1_POO_Colombano
 
             if (ContadorLegajo == 1)
             {
-                miAlumno.Nombre = txtNombre.Text;
+                alumno.Nombre = txtNombre.Text;
                 alumno.Apellido = txtApellido.Text;
                 alumno.FechaNacimiento = dateNacimiento.Value;
                 alumno.FechaIngreso = dateIngreso.Value;
