@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TP1_POO_Colombano
 {
@@ -36,10 +37,12 @@ namespace TP1_POO_Colombano
         }
         public DateTime FechaNacimiento
         {
+            get { return _fechaNacimiento; }
             set { _fechaNacimiento = value; }
         }
         public DateTime FechaIngreso
         {
+            get { return _fechaIngreso; }
             set { _fechaIngreso = value; }
         }
         public int Edad
@@ -109,6 +112,9 @@ namespace TP1_POO_Colombano
         }
 
         #endregion
-
+        ~Alumno()
+        {
+            MessageBox.Show("Se ha eliminado un alumno");
+        }
     }
 }
