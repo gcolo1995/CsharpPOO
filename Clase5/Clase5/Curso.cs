@@ -20,20 +20,16 @@ namespace Clase5
         
         public Alumno BuscarAlumno(int legajo)
         {
-            var buscado = new Alumno();
-            buscado = listado.FirstOrDefault(b => buscado.NroLegajo == legajo);
+            var buscado = listado.FirstOrDefault(b => b.NroLegajo == legajo);
             return buscado;
         }
 
         public void AgregarAlumno(Alumno nuevo)
         {
-            var alumno = nuevo;
             if (BuscarAlumno(nuevo.NroLegajo)  == null)
             {
                 listado.Add(nuevo);
-            }
-            
-                
+            }   
         }
 
         public void QuitarAlumno(Alumno quitado)
