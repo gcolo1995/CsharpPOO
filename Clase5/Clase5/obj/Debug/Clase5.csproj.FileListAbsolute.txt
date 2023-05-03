@@ -1,0 +1,11 @@
+C:\Users\Navegador\source\repos\Clase5\Clase5\bin\Debug\Clase5.exe.config
+C:\Users\Navegador\source\repos\Clase5\Clase5\bin\Debug\Clase5.exe
+C:\Users\Navegador\source\repos\Clase5\Clase5\bin\Debug\Clase5.pdb
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.csproj.AssemblyReference.cache
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.csproj.SuggestedBindingRedirects.cache
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.Properties.Resources.resources
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.csproj.GenerateResource.cache
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.exe
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.pdb
+C:\Users\Navegador\source\repos\Clase5\Clase5\obj\Debug\Clase5.Form1.resources
