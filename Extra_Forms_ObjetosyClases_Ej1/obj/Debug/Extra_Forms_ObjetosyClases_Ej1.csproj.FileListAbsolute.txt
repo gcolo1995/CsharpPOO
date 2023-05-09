@@ -1,0 +1,11 @@
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\bin\Debug\Extra_Forms_ObjetosyClases_Ej1.exe.config
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\bin\Debug\Extra_Forms_ObjetosyClases_Ej1.exe
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\bin\Debug\Extra_Forms_ObjetosyClases_Ej1.pdb
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.csproj.AssemblyReference.cache
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.Principal.resources
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.Properties.Resources.resources
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.csproj.GenerateResource.cache
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.csproj.CoreCompileInputs.cache
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.exe
+C:\Users\gabic\source\repos\POO\Extra_Forms_ObjetosyClases_Ej1\obj\Debug\Extra_Forms_ObjetosyClases_Ej1.pdb
