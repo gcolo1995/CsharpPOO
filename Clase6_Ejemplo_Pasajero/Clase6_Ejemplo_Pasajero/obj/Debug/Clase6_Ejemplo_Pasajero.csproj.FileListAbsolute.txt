@@ -1,8 +1,0 @@
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\bin\Debug\Clase6_Ejemplo_Pasajero.exe.config
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\bin\Debug\Clase6_Ejemplo_Pasajero.exe
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\bin\Debug\Clase6_Ejemplo_Pasajero.pdb
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\obj\Debug\Clase6_Ejemplo_Pasajero.csproj.AssemblyReference.cache
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\obj\Debug\Clase6_Ejemplo_Pasajero.csproj.SuggestedBindingRedirects.cache
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\obj\Debug\Clase6_Ejemplo_Pasajero.csproj.CoreCompileInputs.cache
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\obj\Debug\Clase6_Ejemplo_Pasajero.exe
-C:\Users\Navegador\source\repos\Clase6_Ejemplo_Pasajero\Clase6_Ejemplo_Pasajero\obj\Debug\Clase6_Ejemplo_Pasajero.pdb
