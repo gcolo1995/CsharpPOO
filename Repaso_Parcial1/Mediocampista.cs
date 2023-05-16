@@ -12,9 +12,11 @@ namespace Repaso_Parcial1
 
         public int CantAsist { get => _cantAsist; set => _cantAsist = value; }
 
-        public Mediocampista(int asistencias)
+        public override string ToString()
         {
-            CantAsist = asistencias;
+            return "--------MEDIOCAMPISTA \n Apellido y Nombre: "+base.Apellido+" " +
+                "" + base.Nombre+" \t Fecha de Nacimiento: "+base.FechaNac+" \t Edad: "+base.Edad+" " +
+                "\t Asistencias: "+this.CantAsist+".";
         }
     }
 }

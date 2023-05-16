@@ -9,14 +9,15 @@ namespace Repaso_Parcial1
     internal class Arquero : Jugador
     {
         private double _altura;
-        private int _contador;
 
         public double Altura { get { return _altura; } set { _altura = value; } }
-        public int Contador { get { return _contador; } }
 
-        public Arquero(double altura)
+        public override string ToString()
         {
-            _altura = altura;
+            return "--------ARQUERO \n Apellido y Nombre: " + base.Apellido + " " +
+                "" + base.Nombre + " \t Fecha de Nacimiento: " + base.FechaNac + " \t Edad: " + base.Edad + " " +
+                "\t Altura: " + this.Altura + ".";
         }
+
     }
 }

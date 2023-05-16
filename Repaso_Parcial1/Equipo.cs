@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,21 +9,41 @@ namespace Repaso_Parcial1
 {
     internal class Equipo
     {
-        List<Jugador> jugadores;
-        private int _cantJugadores = 0;
-        private int _cantMaxima = 2;
+        private string _nombre;
+        private List<Jugador> jugadores;
+        private int _cantArqueros = 0;
+        private int _cantMaxArqueros = 3;
+        private int _cantDefensores = 0;
+        private int _cantMaxDefensores = 6; 
+        private int _cantMediocampistas = 0;
+        private int _cantMaxMediocampistas = 5;
+        private int _cantDelanteros = 0;
+        private int _cantMaxDelanteros = 4;
 
-        public int CantJugadores { get { return _cantJugadores; } }
+
+
+        public string Nombre { get => _nombre; set => _nombre = value; }
+
         public Equipo()
         {
             jugadores = new List<Jugador>();
         }
 
 
-        public string Agregar()
+        /*public string AgregarJugador()
         {
             if (_cantJugadores < _cantMaxima)
             {
+                Console.WriteLine("Indique la posición: \n 1 - Arquero \t 2 - Defensor" +
+                    "\t 3 - Mediocampista \t 4 - Delantero");
+                var opcion = Convert.ToInt32(Console.ReadLine());
+
+                Jugador nuevo = new Jugador();
+                jugadores.Add(IndicarPoscion)
+
+
+
+
                 var nuevo = PedirJugador();
                 jugadores.Add(nuevo);   //debo revisar la validacion
                 _cantJugadores++;
@@ -35,7 +56,7 @@ namespace Repaso_Parcial1
             }
 
 
-        }
+        }*/
 
         public void MostrarListado()
         {
@@ -47,9 +68,80 @@ namespace Repaso_Parcial1
 
         }
 
-        public Jugador PedirJugador() //debo plantear mejor como cargar los datos
+
+
+        public string RegistrarJugador(Jugador jugador)
         {
-            var nuevo = new Jugador();
+            if (jugador is Arquero)
+            {
+                if (_cantMaxArqueros > _cantArqueros)
+                {
+                    jugadores.Add(jugador);
+                    _cantArqueros++;
+                    return $"El arquero {jugador.Nombre} {jugador.Apellido} ha sido registrado correctamente.";
+                }
+                else return "No se pueden registrar mas arqueros";
+            }
+            else if (jugador is Defensor)
+            {
+                if (_cantMaxDefensores > _cantDefensores)
+                {
+                    jugadores.Add(jugador);
+                    _cantDefensores++;
+                    return $"El defensor {jugador.Nombre} {jugador.Apellido} ha sido registrado correctamente.";
+                }
+                else return "No se pueden registrar mas defensores";
+            }
+            else if (jugador is Mediocampista)
+            {
+                if (_cantMaxMediocampistas > _cantMediocampistas)
+                {
+                    jugadores.Add(jugador);
+                    _cantMediocampistas++;
+                    return $"El mediocampista {jugador.Nombre} {jugador.Apellido} ha sido registrado correctamente.";
+                }
+                else return "No se pueden registrar mas mediocampistas";
+            }
+            else
+            {
+                if (_cantMaxDelanteros > _cantDelanteros)
+                {
+                    jugadores.Add(jugador);
+                    _cantDelanteros++;
+                    return $"El delantero {jugador.Nombre} {jugador.Apellido} ha sido registrado correctamente.";
+                }
+                else return "No se pueden registrar mas delanteros";
+            }
+        }
+
+        public ReadOnlyCollection<Jugador> ListarCompleto()
+        {
+            return jugadores.AsReadOnly();
+        }
+
+        public ReadOnlyCollection<Arquero> ListarArqueros()
+        {
+            return jugadores.OfType<Arquero>().ToList().AsReadOnly();
+        }
+        public ReadOnlyCollection<Defensor> ListarDefensores()
+        {
+            return jugadores.OfType<Defensor>().ToList().AsReadOnly();
+        }
+        public ReadOnlyCollection<Mediocampista> ListarMedioCampistas()
+        {
+            return jugadores.OfType<Mediocampista>().ToList().AsReadOnly();
+        }
+        public ReadOnlyCollection<Delantero> ListarDelanteros()
+        {
+            return jugadores.OfType<Delantero>().ToList().AsReadOnly();
+        }
+
+
+
+
+        /*public Arquero AgregarArquero()
+        {
+            var nuevo = new Arquero();      
 
             Console.WriteLine("Ingrese el nombre: ");
             nuevo.Nombre = Console.ReadLine();
@@ -57,49 +149,68 @@ namespace Repaso_Parcial1
             nuevo.Apellido = Console.ReadLine();
             Console.WriteLine("Ingrese la fecha de nacimiento: ");
             nuevo.FechaNac = Convert.ToDateTime(Console.ReadLine());
-
-            Console.WriteLine("Ingrese la posición");
-            var opcion = Convert.ToInt32(Console.ReadLine());
-            IndicarPosicion(opcion, nuevo);
-
-            Console.WriteLine("" + nuevo.Nombre + " " + nuevo.Apellido + " tiene " + nuevo.Edad + " años.");
+            Console.WriteLine("Indique la altura:");
+            var altura = Convert.ToDouble(Console.ReadLine());
 
             return nuevo;
-
         }
-        public Jugador IndicarPosicion(int opcion, Jugador datos) //debo repensarlo
+        public Defensor AgregarDefensor()
         {
-            switch (opcion)
-            {
-                case 1:                                         //arquero
-                    Console.WriteLine("Indique la altura:");
-                    var altura = Convert.ToDouble(Console.ReadLine());
-                    Arquero arquero = new Arquero(altura);
-                    return arquero;
-                case 2:                                         //defensor
-                    Console.WriteLine("Indique la cantidad de amarillas");
-                    var amarillas = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Indique la cantidad de rojas");
-                    var rojas = Convert.ToInt32(Console.ReadLine());
-                    Defensor defensor = new Defensor(amarillas, rojas);
-                    return defensor;
-                case 3:                                         //mediocampista
-                    Console.WriteLine("Indique la cantidad de asistencias");
-                    var asistencias= Convert.ToInt32(Console.ReadLine());
-                    Mediocampista mediocamp = new Mediocampista(asistencias);
-                    return mediocamp;
-                case 4:                                         //delantero
-                    Console.WriteLine("Indique la cantidad de goles");
-                    var goles = Convert.ToInt32(Console.ReadLine());
-                    Delantero delantero= new Delantero(goles);
-                    return delantero;
-                default:
-                    Console.WriteLine("Código erróneo");
-                    break;
+            var nuevo = new Defensor();      
 
-            }
+            Console.WriteLine("Ingrese el nombre: ");
+            nuevo.Nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese el apellido: ");
+            nuevo.Apellido = Console.ReadLine();
+            Console.WriteLine("Ingrese la fecha de nacimiento: ");
+            nuevo.FechaNac = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Indique la cantidad de amarillas");
+            var amarillas = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indique la cantidad de rojas");
+            var rojas = Convert.ToInt32(Console.ReadLine());
+
+            return nuevo;
         }
-         
+        public Mediocampista AgregarMediocampista()
+        {
+            var nuevo = new Mediocampista();      
+
+            Console.WriteLine("Ingrese el nombre: ");
+            nuevo.Nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese el apellido: ");
+            nuevo.Apellido = Console.ReadLine();
+            Console.WriteLine("Ingrese la fecha de nacimiento: ");
+            nuevo.FechaNac = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Indique la cantidad de asistencias");
+            var asistencias = Convert.ToInt32(Console.ReadLine());
+
+            return nuevo;
+        }
+        public Delantero AgregarDelantero()
+        {
+            var nuevo = new Delantero();      
+
+            Console.WriteLine("Ingrese el nombre: ");
+            nuevo.Nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese el apellido: ");
+            nuevo.Apellido = Console.ReadLine();
+            Console.WriteLine("Ingrese la fecha de nacimiento: ");
+            nuevo.FechaNac = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Indique la cantidad de goles");
+            var goles = Convert.ToInt32(Console.ReadLine());
+
+            return nuevo;
+        }
+        */
+
+
+
+
+
+
+
+
+
     }
 }
 

@@ -14,10 +14,11 @@ namespace Repaso_Parcial1
         public int TarjAmarillas { get => _tarjAmarillas; set => _tarjAmarillas = value;}
         public int TarjRojas { get => _tarjRojas; set => _tarjRojas = value;}
 
-        public Defensor(int amarillas, int rojas)
+        public override string ToString()
         {
-            TarjAmarillas = amarillas;
-            TarjRojas = rojas;
+            return "--------DEFENSOR \n Apellido y Nombre: " + base.Apellido + " " +
+                "" + base.Nombre + " \t Fecha de Nacimiento: " + base.FechaNac + " \t Edad: " + base.Edad + " " +
+                "\t Amarillas: " + this.TarjAmarillas + "\t Rojas: " + this.TarjRojas+".";
         }
     }
 }

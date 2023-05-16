@@ -12,9 +12,11 @@ namespace Repaso_Parcial1
 
         public int CantGoles { get => _cantGoles; set => _cantGoles = value; }
 
-        public Delantero(int goles)
+        public override string ToString()
         {
-            CantGoles = goles;
+            return "--------DELANTERO \n Apellido y Nombre: " + base.Apellido + " " +
+                "" + base.Nombre + " \t Fecha de Nacimiento: " + base.FechaNac + " \t Edad: " + base.Edad + " " +
+                "\t Goles: " + this.CantGoles + ".";
         }
     }
 }
