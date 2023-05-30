@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colombano_POO_Parcial1", "Colombano_POO_Parcial1.csproj", "{34DD5EEB-1544-4927-BF96-8E6A6243A9ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DD5EEB-1544-4927-BF96-8E6A6243A9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DD5EEB-1544-4927-BF96-8E6A6243A9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DD5EEB-1544-4927-BF96-8E6A6243A9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DD5EEB-1544-4927-BF96-8E6A6243A9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C887AE4-6F52-4EB5-AFBE-A910FD878F10}
+	EndGlobalSection
+EndGlobal
