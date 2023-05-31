@@ -16,5 +16,11 @@ namespace Practica_P1_BsAs
         {
             InitializeComponent();
         }
+
+        private void btnAltaAlumno_Click(object sender, EventArgs e)
+        {
+            var alumno = new Alumno();
+            //alumno.Dni = MessageBox.Show("Ingrese Nombre", );
+        }
     }
 }
