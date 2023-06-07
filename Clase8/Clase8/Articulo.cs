@@ -55,6 +55,12 @@ namespace Clase8
         {
             return listaArticulos;
         }
+        
+        public Articulo Buscar(Articulo articulo)
+        {
+            var buscado = listaArticulos.FirstOrDefault(busqueda => busqueda.Codigo == articulo.Codigo);
+            return buscado;           
+        }
     }
     
     public class Categoria
